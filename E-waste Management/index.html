@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Waste Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #16a085;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #34495e;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #16a085;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .intro h2 {
+            font-size: 36px;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .section h3 {
+            font-size: 30px;
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #34495e;
+            margin-top: 50px;
+            font-size: 16px;
+            color: white;
+            border-top: 2px solid #2c3e50;
+        }
+
+        footer a {
+            color: #16a085;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .button:hover {
+            background-color: #1abc9c;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>E-Waste Portal</h1>
+        <div>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <a href="#">Login/Register</a>
+                <div class="dropdown-content">
+                    <a href="login_register.php?action=login">Login</a>
+                    <a href="login_register.php?action=register">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to the E-Waste Management System</h2>
+            <p>Recycle your old electronics responsibly and earn rewards. Schedule pickups, manage bookings, and track your e-waste journey with ease. Join us in making the world greener and cleaner!</p>
+        </div>
+
+        <div class="section">
+            <h3>What is E-Waste?</h3>
+            <p>E-waste, or electronic waste, refers to discarded electrical or electronic devices that are no longer in use. These items may contain valuable materials such as metals, plastics, and glass that can be recycled or reused, but they can also contain hazardous substances like lead, mercury, and cadmium that are harmful to the environment.</p>
+            <img src="images/1.jpg" alt="E-Waste Recycling" style="width: 500px;"/>
+        </div>
+
+        <div class="section">
+            <h3>Impact of Improper E-Waste Disposal</h3>
+            <p>Improper disposal of e-waste can lead to serious environmental and health hazards. When electronics are dumped in landfills, harmful chemicals can leach into the soil and water, polluting the ecosystem. Additionally, burning e-waste releases toxic fumes, affecting air quality. Responsible recycling helps reduce pollution and recover valuable materials.</p>
+            <img src="images/2.jpg" alt="Impact of E-Waste" style="width: 300px;" />
+        </div>
+
+        <div class="section">
+            <h3>Benefits of Recycling E-Waste</h3>
+            <p>Recycling e-waste has many benefits. It helps conserve natural resources, reduces pollution, and ensures that valuable materials such as gold, silver, copper, and rare metals are recovered and reused. Additionally, it prevents harmful toxins from contaminating the environment.</p>
+            <img src="images/3.jpg" alt="E-Waste Recycling Process" style="width: 300px;" />
+        </div>
+
+     
+
+        <footer>
+            <p>&copy; 2025 E-Waste Management System. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

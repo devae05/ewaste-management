@@ -1,0 +1,28 @@
+# ── Environment & Config ──────────────────────────────────────
+# If you ever extract credentials to a .env file, ignore it:
+.env
+.env.*
+config.local.php
+
+# ── OS & Editor files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── PHP / Composer ───────────────────────────────────────────
+vendor/
+composer.lock
+
+# ── Logs & Caches ────────────────────────────────────────────
+*.log
+logs/
+cache/
+
+# ── Uploaded user files (if you add file-upload features) ────
+uploads/
